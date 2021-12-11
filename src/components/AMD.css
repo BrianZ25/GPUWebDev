@@ -1,0 +1,61 @@
+.AMD_List {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  h1{
+    color:white;
+  }
+  p{
+    color:white;
+  }
+  h2{
+    color:black;
+  }
+  .ItemList {
+    width: 100vw;
+    height: 150vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+  }
+  
+  .AMDItem {
+    border-radius: 15px;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  }
+  .ItemList :hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+
+  .ItemList > div {
+    background-image: url("https://www.pcinvasion.com/wp-content/uploads/2021/03/AMD-RX-6700XT-Reveal.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 80%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .AMD_List {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .AMD_List {
+      grid-template-columns: 1fr;
+    }
+  }

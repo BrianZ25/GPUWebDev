@@ -1,0 +1,58 @@
+.NVIDIA_List {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  h1{
+    color:white;
+  }
+  p{
+    color:white;
+  }
+  .ItemList2 {
+    width: 100vw;
+    height: 150vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+  }
+  
+  .NVIDIAItem {
+    border-radius: 15px;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  }
+  .ItemList2 :hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+
+  .ItemList2 > div {
+    background-image: url('https://images.mein-mmo.de/medien/2020/10/Titelbild-RTX-3070-Neu.jpg');
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 80%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .NVIDIA_List {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .NVIDIA_List {
+      grid-template-columns: 1fr;
+    }
+  }
